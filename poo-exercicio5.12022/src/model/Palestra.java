@@ -7,11 +7,11 @@ public class Palestra extends Submissao{
 	private String descricao;
 	private Date data;
 	private Date hora;
-	private static int numeroPalestra;
+	static int numeroPalestra;
 	
 	public Palestra() {
 		super();
-		this.incrementarNumeroPalestra();
+		incrementarNumeroPalestra();
 	}
 	
 	public Palestra(String titulo, int situacao, Autor autor, Area area, String descricao, Date data, Date hora) {
@@ -19,7 +19,7 @@ public class Palestra extends Submissao{
 		this.descricao = descricao;
 		this.data = data;
 		this.hora = hora;
-		this.incrementarNumeroPalestra();
+		incrementarNumeroPalestra();
 	}
 	
 	public String getDescricao() {

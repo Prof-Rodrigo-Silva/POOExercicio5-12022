@@ -25,7 +25,8 @@ public class AppSubmissao {
 
 		Artigo artigo = new Artigo("Estudo e aplicação do JAVA OO",0,autor,area1,
 				"Ferramentas de desenvolvimento OO");
-
+		
+		
 		SimpleDateFormat sdfd = new SimpleDateFormat("dd/MM/yyyy");
 		SimpleDateFormat sdfh = new SimpleDateFormat("HH:mm");
 
@@ -36,7 +37,7 @@ public class AppSubmissao {
 				
 		Palestra palestra = new Palestra("Mineração de dados na Saúde", 1, autor, area2,
 				"Verificação de Números de Infectados", date, h);
-
+		
 		String hora_inicio = "18:00";
 		String hora_fim = "21:00";
 		data = "09/07/2022";
@@ -46,7 +47,8 @@ public class AppSubmissao {
 		
 		MiniCurso miniCurso = new MiniCurso("PortugolStudio", 3,autor, area3, 3, date, hInicio, hFim);                       
 
-		System.out.println("Artigo -------------------------------------------------");
+		System.out.println("Artigo --------------Palestra palestra = new Palestra();\n"
+				+ "		MiniCurso miniCurso =new MiniCurso();-----------------------------------");
 		System.out.println("Descrição .........: " + artigo.getResumo());
 		System.out.println("Titulo ............: " + artigo.getTitulo());
 		System.out.println("Situação ..........: " + artigo.avaliar(artigo.getSituacao()));
@@ -72,9 +74,9 @@ public class AppSubmissao {
 		System.out.println("Área ..............: " + miniCurso.getArea().getDescricao());
 		
 		System.out.println("---------------------------------------------------------------");
-		System.out.println(miniCurso.getTotal());
-		System.out.println(palestra.getTotal());
-		System.out.println(artigo.getTotal());
+		System.out.println(MiniCurso.getTotal());
+		System.out.println(Palestra.getTotal());
+		System.out.println(Artigo.getTotal());
 		
 		
 

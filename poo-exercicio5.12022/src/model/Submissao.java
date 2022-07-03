@@ -13,7 +13,7 @@ public abstract class Submissao {
 	protected final static int ALTERACOES = 3;
 	
 	public Submissao() {
-		this.incrementarTotal();
+		incrementarTotal();
 		
 	}
 	public Submissao(String titulo, int situacao, Autor autor, Area area) {
@@ -21,7 +21,7 @@ public abstract class Submissao {
 		this.situacao = situacao;
 		this.autor = autor;
 		this.area = area;
-		this.incrementarTotal();
+		incrementarTotal();
 		
 	}
 	public String getTitulo() {
@@ -58,13 +58,14 @@ public abstract class Submissao {
 		
 		String retorno = " ";
 		if(situacao == APROVADO) {
-			return "Aprovado";
+			retorno = "Aprovado";
 		}else if(situacao == REPROVADO){
-			return "Reprovado";
+			retorno = "Reprovado";
 		
 		}else {
-			return "Alterações";
+			retorno = "Alterações";
 		}
+		return retorno;
 	}
 	
 	private static void incrementarTotal() {

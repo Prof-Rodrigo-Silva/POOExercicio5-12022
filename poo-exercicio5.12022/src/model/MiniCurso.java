@@ -8,11 +8,11 @@ public class MiniCurso extends Submissao{
 	private Date data;
 	private Date horaInicio;
 	private Date horaFim;
-	private static int numeroMiniCurso;
+	static int numeroMiniCurso;
 	
 	public MiniCurso() {
 		super();
-		this.incrementarNumeroMiniCurso();
+		incrementarNumeroMiniCurso();
 	}
 	
 	public MiniCurso(String titulo, int situacao, Autor autor, Area area, int horas, Date data, Date horaInicio, Date horaFim){
@@ -21,7 +21,7 @@ public class MiniCurso extends Submissao{
 		this.data = data;
 		this.horaInicio = horaInicio;
 		this.horaFim = horaFim;
-		this.incrementarNumeroMiniCurso();
+		incrementarNumeroMiniCurso();
 	}
 		
 	public int getHoras() {
